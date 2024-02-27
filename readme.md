@@ -1,30 +1,39 @@
-AWS Event Stream Processor
-What it does:
+# AWS Event Stream Processor
 
-This Go program helps you process event streams generated from an AWS S3 SelectObjectContent operation. It provides a function named awsEventStream that takes the SelectObjectContentOutput and iterates through the received events, allowing you to process them as needed.
+## What it does:
 
-Installation:
+This Go program helps you process event streams generated from an AWS S3 `SelectObjectContent` operation. It provides a function named `awsEventStream` that takes the `SelectObjectContentOutput` and iterates through the received events, allowing you to process them as needed.
 
-Prerequisites: Ensure you have Go installed on your system.
+## Installation:
 
-Clone Repository: Clone this repository using your preferred Git client:
+### Prerequisites:
+Ensure you have Go installed on your system.
 
-Bash
+### Clone Repository:
+Clone this repository using your preferred Git client:
+
+```bash
 git clone https://github.com/vishwaratna/awsEventStream_Test_coverage.git
+```
+
 Use code with caution.
-Usage:
 
-Import Packages: Import the required packages in your project:
+## Usage:
+### Import Packages: 
+Import the required packages in your project:
 
-Go
+```bash
 import (
     "github.com/aws/aws-sdk-go/service/s3"
     "log"
-)
-Use code with caution.
-Process Events: Call the awsEventStream function with the SelectObjectContentOutput obtained from your S3 operation:
+) 
+```
 
-Go
+
+### Process Events:
+Call the awsEventStream function with the SelectObjectContentOutput obtained from your S3 operation:
+
+```bash
 output, err := s3Client.SelectObjectContent(input)
 if err != nil {
     log.Fatal(err)
@@ -34,24 +43,25 @@ err = awsEventStream(output)
 if err != nil {
     log.Fatal(err)
 }
-Use code with caution.
-Handle Processed Events: Within the awsEventStream function, implement your custom logic to handle each processed event.
 
-Testing:
+```
 
+### Handle Processed Events:
+Within the awsEventStream function, implement your custom logic to handle each processed event.
+
+## Testing:
 This project includes unit tests to verify functionalities. To run the tests:
 
 Navigate to the project directory containing the code.
-
 Run the following command in your terminal:
 
-Bash
+```bash
 go test
 Use code with caution.
-Contributing:
+```
 
+## Contributing:
 We welcome contributions to this project! Feel free to fork the repository, make your changes, and submit a pull request.
 
-Additional Notes:
-
+## Additional Notes:
 Remember to handle errors appropriately within your code using the provided error information.
