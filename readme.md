@@ -10,7 +10,7 @@ Prerequisites: Ensure you have Go installed on your system.
 Clone Repository: Clone this repository using your preferred Git client:
 
 Bash
-git clone https://[\[repository_url\]](https://github.com/vishwaratna/awsEventStream_Test_coverage).git
+git clone https://github.com/vishwaratna/awsEventStream_Test_coverage.git
 Use code with caution.
 Usage:
 
@@ -52,9 +52,6 @@ Contributing:
 
 We welcome contributions to this project! Feel free to fork the repository, make your changes, and submit a pull request.
 
-Please note:
-
-Replace [\[repository_url\]](https://github.com/vishwaratna/awsEventStream_Test_coverage) with the actual URL of your repository.
 Additional Notes:
 
 Remember to handle errors appropriately within your code using the provided error information.
